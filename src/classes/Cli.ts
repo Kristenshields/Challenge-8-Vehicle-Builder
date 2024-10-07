@@ -323,7 +323,7 @@ class Cli {
             'Turn left',
             'Reverse',
             'Tow',
-            'Wheelie',
+            'Do a wheelie',
             'Select or create another vehicle',
             'Exit',
           ],

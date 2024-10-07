@@ -40,6 +40,24 @@ class Motorbike extends Vehicle {
 
   // TODO: Implement the wheelie method
     // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
+    wheelie(): void {
+        console.log ('Motorbike ${this.make} ${this.model} is doing a wheelie!');
+    }
+
+    override printDetails(): void {
+        super.printDetails();
+        
+        console.log(`
+          VIN: ${this.vin}
+          make: ${this.make}
+          model: ${this.model}
+          year: ${this.year}
+          weight: ${this.weight}
+          top speed: ${this.topSpeed}
+          color: ${this.color}
+          wheels: ${this.wheels}
+        `)
+      }
 
   // TODO: Override the printDetails method from the Vehicle class
   // TODO: The method should call the printDetails method of the parent class
