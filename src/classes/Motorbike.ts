@@ -28,36 +28,42 @@ class Motorbike extends Vehicle {
     this.weight = weight;
     this.topSpeed = topSpeed;
 
-    if (wheels.length === 2){
-        this.wheels = wheels
+    if (wheels.length !== 2) {
+      this.wheels = [new Wheel(), new Wheel()];
     } else {
-        this.wheels = [new Wheel, new Wheel]
+      this.wheels = wheels;
     }
   };
-    // TODO: The constructor should call the constructor of the parent class, Vehicle
-    // TODO: The constructor should initialize the properties of the Motorbike class
-    // TODO: The constructor should check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
+  // TODO: The constructor should call the constructor of the parent class, Vehicle
+  // TODO: The constructor should initialize the properties of the Motorbike class
+  // TODO: The constructor should check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
 
   // TODO: Implement the wheelie method
-    // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
-    wheelie(): void {
-        console.log ('Motorbike ${this.make} ${this.model} is doing a wheelie!');
-    }
+  // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
+  wheelie(): void {
+    console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
+  }
 
-    override printDetails(): void {
-        super.printDetails();
+  override printDetails(): void {
+    super.printDetails();
+
+    
+    console.log(`VIN: ${this.vin}`);
+    console.log(`color: ${this.color}`);
+    console.log(`make: ${this.make}`);
+    console.log(`model: ${this.model}`);
+    console.log(`year: ${this.year}`);
+    console.log(`weight: ${this.weight}`);
+    console.log(`top speed: ${this.topSpeed}`);
+    
+    console.log(
+      `Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
+    );
+    console.log(
+      `Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire`
+    );      
         
-        console.log(`
-          VIN: ${this.vin}
-          make: ${this.make}
-          model: ${this.model}
-          year: ${this.year}
-          weight: ${this.weight}
-          top speed: ${this.topSpeed}
-          color: ${this.color}
-          wheels: ${this.wheels}
-        `)
-      }
+  }
 
   // TODO: Override the printDetails method from the Vehicle class
   // TODO: The method should call the printDetails method of the parent class
