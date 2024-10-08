@@ -31,8 +31,7 @@ Before you install the Vehicle Builder, make sure you have the latest version of
 
 ## Walkthrough Video
 Click on the link to watch the walkthrough video of the Vehicle Builder:
-- https://drive.google.com/file/d/1cygz_5fRDaB3mjgtvlDALRk-_eoXk6tP/view?usp=drive_link
-
+https://drive.google.com/file/d/1yStjs6oQn1y8zoizqHObEIrGCnjyiwnD/view?usp=sharing
 
 
 ## Questions
